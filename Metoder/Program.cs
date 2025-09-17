@@ -19,7 +19,7 @@ class Metoder()
     var firstAndLastName = $"{namn[0]} {namn[namn.Length - 1]}"; //tar första och sista argumentet och sätter dem som för och efternamn
     return firstAndLastName;
   }
-  public static bool Arbiträr(bool värde1, bool värde2)
+  public static bool Arbiträr(bool värde1, bool värde2) //tar två bools och kollar om de båda är true
   {
     return (värde1 && värde2);
   }
