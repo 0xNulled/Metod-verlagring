@@ -3,12 +3,9 @@
   static void Main()
   {
     Console.WriteLine(Metoder.Arbiträr(2, 5));
+    Console.WriteLine(Metoder.Arbiträr("Isabella", "Idun", "Lisa", "Jakobson"));
   }
-
 }
-
-
-
 
 class Metoder()
 {
@@ -16,5 +13,9 @@ class Metoder()
   {
     return nummer1 + nummer2;
   }
-
+  public static string Arbiträr(params string[] namn)
+  {
+    var firstAndLastName = $"{namn[0]} {namn[namn.Length - 1]}";
+    return firstAndLastName;
+  }
 } 
